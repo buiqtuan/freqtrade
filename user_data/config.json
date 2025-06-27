@@ -1,13 +1,13 @@
 
 {
     "$schema": "https://schema.freqtrade.io/schema.json",
-    "strategy": "BinanceTestStrategy",
+    "strategy": "OptimizedAdaptiveStrategy",
     "max_open_trades": 3,
     "stake_currency": "USDT",
     "stake_amount": 20,
     "tradable_balance_ratio": 0.99,
     "fiat_display_currency": "USD",
-    "timeframe": "5m",
+    "timeframe": "15m",
     "dry_run": true,
     "dry_run_wallet": 1000,
     "cancel_open_orders_on_exit": false,
@@ -40,11 +40,11 @@
         "ccxt_config": {},
         "ccxt_async_config": {},
         "pair_whitelist": [
-            "BTC/USDT",
-            "ETH/USDT"
+            "BTC/USDT"
         ],
         "pair_blacklist": [
-            "BNB/.*"
+            "BNB/BTC",
+            "BNB/ETH"
         ]
     },
     "pairlists": [
